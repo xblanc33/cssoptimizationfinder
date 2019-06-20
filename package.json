@@ -1,0 +1,22 @@
+{
+  "name": "cssoptimizationfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xblanc33/cssoptimizationfinder.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/xblanc33/cssoptimizationfinder/issues"
+  },
+  "homepage": "https://github.com/xblanc33/cssoptimizationfinder#readme",
+  "dependencies": {
+    "puppeteer": "^1.17.0"
+  }
+}
