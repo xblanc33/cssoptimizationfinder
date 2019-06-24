@@ -1,7 +1,8 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 (async function() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
 
     await page.goto("https://www.alexa.com/topsites");
@@ -18,7 +19,11 @@ const puppeteer = require('puppeteer');
 
     browser.close();
 
-    console.log(urlTab);
+
+    fs.writeFile('url.csv', urlTab.join('\n'), (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      });
 })();
 
 
